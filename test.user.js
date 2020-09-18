@@ -145,7 +145,8 @@
     // 资费信息， 视频传送租费
     iframe.find("[name=0-spjpw_00000015-200001785]").val("666"); //月租
     // iframe.find("[name=0-spjpw_00000015-200000171]").val(""); // 末月收取方式
-    // iframe.find("[name=0-spjpw_00000015-200000171]").val("100000265"); // 末月收取方式
+    iframe.find("[name=0-spjpw_00000015-200000171]").val("100000265").trigger('change').trigger('select') // 末月收取方式
+
 
     // 保存按钮
     //iframe.find("button.saveGoodsForBtn").click();
